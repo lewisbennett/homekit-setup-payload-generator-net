@@ -16,7 +16,7 @@ View [sample project](https://github.com/lewisbennett/homekit-setup-payload-gene
 
 ## Technical Payload Breakdown: `X-HM://0075OVT5A1A2B`
 
-This is the format of a HomeKit setup payload: `X-HM://<version, category, flags and setup code><setup ID>`. In the example payload above, `0075OVT5A` is made up of the version, category, flags and setup code, and `1A2B` is the setup ID.
+This is the format of a HomeKit setup payload: `X-HM://<version, category, flags and setup code><setup ID>`. In the example payload above, `0075OVT5A` is made up of the version (0), category (7), flags (BLE) and setup code (123-45-678), and `1A2B` is the setup ID.
 
 `<version, category, flags and setup code><setup ID>` is 9 characters in length and represents the following 46-bit value encoded as a base-36 string:
 * Bits 45-43, version - should be set to 0\`b000 in most cases.
